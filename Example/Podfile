@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'JDFTooltips', :exclusive => true do
+  pod "JDFTooltips", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "JDFTooltips", :path => "../"
+
+  pod 'Specta', '~> 0.2.1'
+  pod 'Expecta'
+end
