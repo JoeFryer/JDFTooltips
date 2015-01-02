@@ -226,7 +226,7 @@
     }
 }
 
-- (void)showBackdropView // Do we only need to create the backdrop view if it hasn't been created already?
+- (void)showBackdropView
 {
     UIWindow *window = self.hostView.window;
     self.backdropView = [[UIView alloc] initWithFrame:window.bounds];
