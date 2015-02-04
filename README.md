@@ -1,6 +1,5 @@
 # JDFTooltips
 
-[![CI Status](http://img.shields.io/travis/Joe Fryer/JDFTooltips.svg?style=flat)](https://travis-ci.org/Joe Fryer/JDFTooltips)
 [![Version](https://img.shields.io/cocoapods/v/JDFTooltips.svg?style=flat)](http://cocoadocs.org/docsets/JDFTooltips)
 [![License](https://img.shields.io/cocoapods/l/JDFTooltips.svg?style=flat)](http://cocoadocs.org/docsets/JDFTooltips)
 [![Platform](https://img.shields.io/cocoapods/p/JDFTooltips.svg?style=flat)](http://cocoadocs.org/docsets/JDFTooltips)
@@ -9,7 +8,7 @@
 
 They look a bit like this:
 
-![JDFTooltips Gif](Screenshots/JDFTooltips.gif)
+<img src="Screenshots/JDFTooltips.gif" width="300"/>
 
 ## Usage
 
