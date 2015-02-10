@@ -24,11 +24,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		A5E0ED39ED29D6FF0241D9EA /* libPods-JDFTooltips.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D6A4003FE78C08FD1BA80B /* libPods-JDFTooltips.a */; };
 		DDBB3F3755BF492FCAD607D0 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3837B07CF51F79EED1E56075 /* libPods-Tests.a */; };
-		F29641ED1A56DD070031A9CB /* JDFSequentialTooltipManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F29641E31A56DD070031A9CB /* JDFSequentialTooltipManager.m */; };
-		F29641EE1A56DD070031A9CB /* JDFTooltipManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F29641E51A56DD070031A9CB /* JDFTooltipManager.m */; };
-		F29641EF1A56DD070031A9CB /* JDFTooltipView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29641E81A56DD070031A9CB /* JDFTooltipView.m */; };
-		F29641F01A56DD070031A9CB /* UILabel+JDFTooltips.m in Sources */ = {isa = PBXBuildFile; fileRef = F29641EA1A56DD070031A9CB /* UILabel+JDFTooltips.m */; };
-		F29641F11A56DD070031A9CB /* UIView+JDFTooltips.m in Sources */ = {isa = PBXBuildFile; fileRef = F29641EC1A56DD070031A9CB /* UIView+JDFTooltips.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,17 +67,6 @@
 		B9B210D48BE8EF9CB5CA56E5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BB4310D7824FA81811981A50 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E557634EC1229457E96744E7 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F29641E21A56DD070031A9CB /* JDFSequentialTooltipManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JDFSequentialTooltipManager.h; path = ../Pod/Classes/JDFSequentialTooltipManager.h; sourceTree = "<group>"; };
-		F29641E31A56DD070031A9CB /* JDFSequentialTooltipManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JDFSequentialTooltipManager.m; path = ../Pod/Classes/JDFSequentialTooltipManager.m; sourceTree = "<group>"; };
-		F29641E41A56DD070031A9CB /* JDFTooltipManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JDFTooltipManager.h; path = ../Pod/Classes/JDFTooltipManager.h; sourceTree = "<group>"; };
-		F29641E51A56DD070031A9CB /* JDFTooltipManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JDFTooltipManager.m; path = ../Pod/Classes/JDFTooltipManager.m; sourceTree = "<group>"; };
-		F29641E61A56DD070031A9CB /* JDFTooltips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JDFTooltips.h; path = ../Pod/Classes/JDFTooltips.h; sourceTree = "<group>"; };
-		F29641E71A56DD070031A9CB /* JDFTooltipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JDFTooltipView.h; path = ../Pod/Classes/JDFTooltipView.h; sourceTree = "<group>"; };
-		F29641E81A56DD070031A9CB /* JDFTooltipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JDFTooltipView.m; path = ../Pod/Classes/JDFTooltipView.m; sourceTree = "<group>"; };
-		F29641E91A56DD070031A9CB /* UILabel+JDFTooltips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+JDFTooltips.h"; path = "../Pod/Classes/UILabel+JDFTooltips.h"; sourceTree = "<group>"; };
-		F29641EA1A56DD070031A9CB /* UILabel+JDFTooltips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+JDFTooltips.m"; path = "../Pod/Classes/UILabel+JDFTooltips.m"; sourceTree = "<group>"; };
-		F29641EB1A56DD070031A9CB /* UIView+JDFTooltips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+JDFTooltips.h"; path = "../Pod/Classes/UIView+JDFTooltips.h"; sourceTree = "<group>"; };
-		F29641EC1A56DD070031A9CB /* UIView+JDFTooltips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+JDFTooltips.m"; path = "../Pod/Classes/UIView+JDFTooltips.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
-				F29641E11A56DCE90031A9CB /* JDFTooltips */,
 				6003F593195388D20070C39A /* Example */,
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
@@ -211,24 +194,6 @@
 				E557634EC1229457E96744E7 /* Pods-Tests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		F29641E11A56DCE90031A9CB /* JDFTooltips */ = {
-			isa = PBXGroup;
-			children = (
-				F29641E21A56DD070031A9CB /* JDFSequentialTooltipManager.h */,
-				F29641E31A56DD070031A9CB /* JDFSequentialTooltipManager.m */,
-				F29641E41A56DD070031A9CB /* JDFTooltipManager.h */,
-				F29641E51A56DD070031A9CB /* JDFTooltipManager.m */,
-				F29641E61A56DD070031A9CB /* JDFTooltips.h */,
-				F29641E71A56DD070031A9CB /* JDFTooltipView.h */,
-				F29641E81A56DD070031A9CB /* JDFTooltipView.m */,
-				F29641E91A56DD070031A9CB /* UILabel+JDFTooltips.h */,
-				F29641EA1A56DD070031A9CB /* UILabel+JDFTooltips.m */,
-				F29641EB1A56DD070031A9CB /* UIView+JDFTooltips.h */,
-				F29641EC1A56DD070031A9CB /* UIView+JDFTooltips.m */,
-			);
-			name = JDFTooltips;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,14 +362,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F29641EE1A56DD070031A9CB /* JDFTooltipManager.m in Sources */,
-				F29641EF1A56DD070031A9CB /* JDFTooltipView.m in Sources */,
 				6003F59E195388D20070C39A /* JDFAppDelegate.m in Sources */,
-				F29641ED1A56DD070031A9CB /* JDFSequentialTooltipManager.m in Sources */,
 				6003F5A7195388D20070C39A /* JDFViewController.m in Sources */,
-				F29641F11A56DD070031A9CB /* UIView+JDFTooltips.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				F29641F01A56DD070031A9CB /* UILabel+JDFTooltips.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

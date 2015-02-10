@@ -1,6 +1,6 @@
 PODS:
   - Expecta (0.3.1)
-  - JDFTooltips (0.1.0)
+  - JDFTooltips (1.0)
   - Specta (0.2.1)
 
 DEPENDENCIES:
@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
-  JDFTooltips: dfb2f48e46f895e7af3572820071cebd609c6c77
+  JDFTooltips: 129c721ab7151bee543ec9a3505b148124b0b553
   Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
 
 COCOAPODS: 0.35.0

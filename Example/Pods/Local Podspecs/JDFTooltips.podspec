@@ -9,30 +9,21 @@
 
 Pod::Spec.new do |s|
   s.name             = "JDFTooltips"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of JDFTooltips."
+  s.version          = "1.0"
+  s.summary          = "A simple library for showing tooltip-like popups on iOS"
   s.description      = <<-DESC
-                       An optional longer description of JDFTooltips
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       JDFTooltips is simple library for showing tooltip-like popups on iOS
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/JDFTooltips"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/JoeFryer/JDFTooltips"
   s.license          = 'MIT'
   s.author           = { "Joe Fryer" => "joe.d.fryer@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/JDFTooltips.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/JoeFryer/JDFTooltips.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/joefryer88'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes'
-  s.resource_bundles = {
-    'JDFTooltips' => ['Pod/Assets/*.png']
-  }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
 end
