@@ -27,14 +27,20 @@ Or, if you want to show more than one tooltip, it's probably easier to use one o
 
 These manager classes also provide convenience methods for configuring stuff (background colour, text colour, font etc) on the all of the tooltips they are managing, and convenience methods for creating tooltips.
 
+**If you are using a tooltip manager, you should keep a strong reference to it.**
+
 `JDFSequentialTooltipManager` example:
 
 ``` objc
-    JDFSequentialTooltipManager *tooltipManager = [[JDFSequentialTooltipManager alloc] initWithHostView:self.view];
-    [tooltipManager addTooltipWithTargetView:view1 hostView:self.view tooltipText:@"Tooltip 1" arrowDirection:JDFTooltipViewArrowDirectionUp width:200.0f];
-    [tooltipManager addTooltipWithTargetView:view2 hostView:self.view tooltipText:@"Tooltip 2" arrowDirection:JDFTooltipViewArrowDirectionUp width:200.0f];
-    [tooltipManager addTooltipWithTargetView:view3 hostView:self.view tooltipText:@"Tooltip 3" arrowDirection:JDFTooltipViewArrowDirectionDown width:200.0f];
-    [tooltipManager showNextTooltip];
+    // In your interface
+    @property (nonatomic, strong) JDFSequentialTooltipManager *tooltipManager;
+    
+    // Somewhere in your implementation
+    self.tooltipManager = [[JDFSequentialTooltipManager alloc] initWithHostView:self.view];
+    [self.tooltipManager addTooltipWithTargetView:view1 hostView:self.view tooltipText:@"Tooltip 1" arrowDirection:JDFTooltipViewArrowDirectionUp width:200.0f];
+    [self.tooltipManager addTooltipWithTargetView:view2 hostView:self.view tooltipText:@"Tooltip 2" arrowDirection:JDFTooltipViewArrowDirectionUp width:200.0f];
+    [self.tooltipManager addTooltipWithTargetView:view3 hostView:self.view tooltipText:@"Tooltip 3" arrowDirection:JDFTooltipViewArrowDirectionDown width:200.0f];
+    [self.tooltipManager showNextTooltip];
 ```
 
 ## Demo
