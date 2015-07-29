@@ -198,7 +198,7 @@
 {
     self.arrowDirection = arrowDirection;
     self.arrowPoint = point;
-    self.alpha = 1.0f;
+    self.alpha = 0.0f;
     
     // Add ourselves to the view
     [view addSubview:self];
@@ -217,16 +217,15 @@
     
     [self sanitiseArrowPointWithWidth:width];
     
-    // Setup the staring point of animation (frame inset, text invisible)
-    self.frame = CGRectInset(self.frame, 10, 10);
-    self.tooltipTextLabel.alpha = 0.0f;
+    // Setup the starting point of animation
+    CGAffineTransform transform = CGAffineTransformIdentity;
+    transform = CGAffineTransformScale(transform, 0.5f, 0.5f);
+    self.transform = transform;
     
     // Perform the animation
-    [UIView animateWithDuration:0.3 delay:0.0 usingSpringWithDamping:0.4 initialSpringVelocity:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        self.frame = tooltipFrame;
-        [UIView animateWithDuration:0.1 delay:0.15 options:UIViewAnimationOptionCurveLinear animations:^{
-            self.tooltipTextLabel.alpha = 1.0f;
-        } completion:nil];
+    [UIView animateWithDuration:0.3 delay:0.0 usingSpringWithDamping:0.6f initialSpringVelocity:0.0f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        self.transform = CGAffineTransformIdentity;
+        self.alpha = 1.0f;
     } completion:^(BOOL finished) {
         if (self.showCompletionBlock) {
             self.showCompletionBlock();
