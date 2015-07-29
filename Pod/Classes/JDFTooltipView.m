@@ -219,7 +219,7 @@
     
     // Setup the starting point of animation
     CGAffineTransform transform = CGAffineTransformIdentity;
-    transform = CGAffineTransformScale(transform, 0.5f, 0.5f);
+    transform = CGAffineTransformScale(transform, 0.6f, 0.6f);
     self.transform = transform;
     
     // Perform the animation
@@ -249,21 +249,21 @@
 - (void)hideAnimated:(BOOL)animated
 {
     if (animated) {
-        [UIView animateWithDuration:0.1 animations:^{
-            self.tooltipTextLabel.alpha = 0.0f;
-        } completion:^(BOOL finished) {
-            [UIView animateWithDuration:0.1 delay:0.0 usingSpringWithDamping:0.4 initialSpringVelocity:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-                self.frame = CGRectInset(self.frame, -1, -1);
-            } completion:^(BOOL finished2) {
-                [UIView animateWithDuration:0.8 delay:0.0 usingSpringWithDamping:0.7 initialSpringVelocity:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-                    self.frame = CGRectInset(self.frame, 10, 10);
-                    self.alpha = 0.0f;
-                } completion:^(BOOL finished3) {
-                    [self removeFromSuperview];
-                    if (self.hideCompletionBlock) {
-                        self.hideCompletionBlock();
-                    }
-                }];
+        [UIView animateWithDuration:0.1 delay:0.0 usingSpringWithDamping:0.6 initialSpringVelocity:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            CGAffineTransform transform = CGAffineTransformIdentity;
+            transform = CGAffineTransformScale(transform, 1.05f, 1.05f);
+            self.transform = transform;
+        } completion:^(BOOL finished2) {
+            [UIView animateWithDuration:0.8 delay:0.0 usingSpringWithDamping:0.7 initialSpringVelocity:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                CGAffineTransform transform = CGAffineTransformIdentity;
+                transform = CGAffineTransformScale(transform, 0.3f, 0.3f);
+                self.transform = transform;
+                self.alpha = 0.0f;
+            } completion:^(BOOL finished3) {
+                [self removeFromSuperview];
+                if (self.hideCompletionBlock) {
+                    self.hideCompletionBlock();
+                }
             }];
         }];
     } else {
