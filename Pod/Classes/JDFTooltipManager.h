@@ -128,7 +128,7 @@
  *
  *  @return An initialised JDFTooltipManager.
  */
-- (instancetype)initWithHostView:(UIView *)view tooltips:(NSArray *)tooltips NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithHostView:(UIView *)view tooltips:(NSArray *)tooltips;
 
 
 #pragma mark Adding Tooltips

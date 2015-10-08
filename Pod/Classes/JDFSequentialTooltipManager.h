@@ -16,14 +16,6 @@
  */
 @interface JDFSequentialTooltipManager : JDFTooltipManager
 
-#pragma mark - Options
-
-/**
- *  Indicates whether a tap on the backdropView triggers an action. For JDFSequentialTooltipManager, this action is showNextTooltip. Default is YES.
- */
-@property (nonatomic) BOOL backdropTapActionEnabled;
-
-
 #pragma mark - Showing Tooltips
 /**
  *  Hides the manager's current tooltip (if there is a tooltip currently showing) and shows the next one.
