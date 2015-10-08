@@ -68,3 +68,14 @@ Joe Fryer, joe.d.fryer@gmail.com
 
 JDFTooltips is available under the MIT license. See the LICENSE file for more info.
 
+## Release Notes
+
+#### 1.0
+
+Initial Release
+
+#### 1.1
+
+ - Improved tooltip showing/hiding animation
+ - Bug Fix: JDFSequentialTooltipManager no longer bypasses a tooltip's dismissOnTouch setting.
+
