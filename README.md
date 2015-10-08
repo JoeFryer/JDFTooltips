@@ -29,6 +29,8 @@ These manager classes also provide convenience methods for configuring stuff (ba
 
 **If you are using a tooltip manager, you should keep a strong reference to it.**
 
+**Note: If you have the backdrop enabled, you should not show your tooltips from within `viewDidLoad` - you should instead show them from `viewDidAppear:`. This is a know issue that will be fixed in the future.**
+
 `JDFSequentialTooltipManager` example:
 
 ``` objc
