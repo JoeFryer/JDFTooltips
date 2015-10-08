@@ -71,7 +71,9 @@
 
 - (void)handleTooltipTap:(UIGestureRecognizer *)gestureRecogniser
 {
-    [self showNextTooltip];
+    if (self.currentlyShowingTooltip.dismissOnTouch) {
+        [self showNextTooltip];
+    }
 }
 
 @end
