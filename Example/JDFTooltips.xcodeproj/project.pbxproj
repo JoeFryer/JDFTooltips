@@ -814,6 +814,7 @@
 				9AA1748B1DC6A7140074B9AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
