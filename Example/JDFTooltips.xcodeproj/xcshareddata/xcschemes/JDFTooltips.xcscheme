@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9A6C9F781DC73AA100133BF7"
+               BlueprintIdentifier = "9A6C9F951DC73D4600133BF7"
                BuildableName = "JDFTooltips.framework"
                BlueprintName = "JDFTooltips"
                ReferencedContainer = "container:JDFTooltips.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9A6C9F781DC73AA100133BF7"
+            BlueprintIdentifier = "9A6C9F951DC73D4600133BF7"
             BuildableName = "JDFTooltips.framework"
             BlueprintName = "JDFTooltips"
             ReferencedContainer = "container:JDFTooltips.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9A6C9F781DC73AA100133BF7"
+            BlueprintIdentifier = "9A6C9F951DC73D4600133BF7"
             BuildableName = "JDFTooltips.framework"
             BlueprintName = "JDFTooltips"
             ReferencedContainer = "container:JDFTooltips.xcodeproj">
