@@ -29,6 +29,11 @@
 		9A6C9FA71DC73DE800133BF7 /* JDFTooltipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174941DC6A7480074B9AD /* JDFTooltipView.m */; };
 		9A6C9FA91DC73DE800133BF7 /* UILabel+JDFTooltips.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174961DC6A7480074B9AD /* UILabel+JDFTooltips.m */; };
 		9A6C9FAB1DC73DE800133BF7 /* UIView+JDFTooltips.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174981DC6A7480074B9AD /* UIView+JDFTooltips.m */; };
+		9A6C9FAC1DC73F2C00133BF7 /* JDFSequentialTooltipManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AA1748E1DC6A7480074B9AD /* JDFSequentialTooltipManager.h */; };
+		9A6C9FAD1DC73F2C00133BF7 /* JDFTooltipManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AA174901DC6A7480074B9AD /* JDFTooltipManager.h */; };
+		9A6C9FAE1DC73F2C00133BF7 /* JDFTooltipView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AA174931DC6A7480074B9AD /* JDFTooltipView.h */; };
+		9A6C9FAF1DC73F2C00133BF7 /* UILabel+JDFTooltips.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AA174951DC6A7480074B9AD /* UILabel+JDFTooltips.h */; };
+		9A6C9FB01DC73F2C00133BF7 /* UIView+JDFTooltips.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AA174971DC6A7480074B9AD /* UIView+JDFTooltips.h */; };
 		A5E0ED39ED29D6FF0241D9EA /* libPods-JDFTooltips.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D6A4003FE78C08FD1BA80B /* libPods-JDFTooltips.a */; };
 		DDBB3F3755BF492FCAD607D0 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3837B07CF51F79EED1E56075 /* libPods-Tests.a */; };
 /* End PBXBuildFile section */
@@ -274,6 +279,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A6C9F9A1DC73D4600133BF7 /* JDFTooltips.h in Headers */,
+				9A6C9FAC1DC73F2C00133BF7 /* JDFSequentialTooltipManager.h in Headers */,
+				9A6C9FAD1DC73F2C00133BF7 /* JDFTooltipManager.h in Headers */,
+				9A6C9FAE1DC73F2C00133BF7 /* JDFTooltipView.h in Headers */,
+				9A6C9FAF1DC73F2C00133BF7 /* UILabel+JDFTooltips.h in Headers */,
+				9A6C9FB01DC73F2C00133BF7 /* UIView+JDFTooltips.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
