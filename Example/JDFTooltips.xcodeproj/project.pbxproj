@@ -22,20 +22,20 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		9AA174841DC6A7140074B9AD /* JDFTooltipsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AA174831DC6A7140074B9AD /* JDFTooltipsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9AA174881DC6A7140074B9AD /* JDFTooltips.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA174811DC6A7140074B9AD /* JDFTooltips.framework */; };
-		9AA174891DC6A7140074B9AD /* JDFTooltips.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA174811DC6A7140074B9AD /* JDFTooltips.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9AA174991DC6A7480074B9AD /* JDFSequentialTooltipManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 9AA1748E1DC6A7480074B9AD /* JDFSequentialTooltipManager.h */; };
-		9AA1749A1DC6A7480074B9AD /* JDFSequentialTooltipManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA1748F1DC6A7480074B9AD /* JDFSequentialTooltipManager.m */; };
-		9AA1749B1DC6A7480074B9AD /* JDFTooltipManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174901DC6A7480074B9AD /* JDFTooltipManager.h */; };
-		9AA1749C1DC6A7480074B9AD /* JDFTooltipManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174911DC6A7480074B9AD /* JDFTooltipManager.m */; };
-		9AA1749D1DC6A7480074B9AD /* JDFTooltips.h in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174921DC6A7480074B9AD /* JDFTooltips.h */; };
-		9AA1749E1DC6A7480074B9AD /* JDFTooltipView.h in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174931DC6A7480074B9AD /* JDFTooltipView.h */; };
-		9AA1749F1DC6A7480074B9AD /* JDFTooltipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174941DC6A7480074B9AD /* JDFTooltipView.m */; };
-		9AA174A01DC6A7480074B9AD /* UILabel+JDFTooltips.h in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174951DC6A7480074B9AD /* UILabel+JDFTooltips.h */; };
-		9AA174A11DC6A7480074B9AD /* UILabel+JDFTooltips.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174961DC6A7480074B9AD /* UILabel+JDFTooltips.m */; };
-		9AA174A21DC6A7480074B9AD /* UIView+JDFTooltips.h in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174971DC6A7480074B9AD /* UIView+JDFTooltips.h */; };
-		9AA174A31DC6A7480074B9AD /* UIView+JDFTooltips.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174981DC6A7480074B9AD /* UIView+JDFTooltips.m */; };
+		9A6C9F801DC73AA100133BF7 /* JDFTooltips.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6C9F791DC73AA100133BF7 /* JDFTooltips.framework */; };
+		9A6C9F811DC73AA100133BF7 /* JDFTooltips.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6C9F791DC73AA100133BF7 /* JDFTooltips.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9A6C9F851DC73ACC00133BF7 /* JDFSequentialTooltipManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 9AA1748E1DC6A7480074B9AD /* JDFSequentialTooltipManager.h */; };
+		9A6C9F861DC73ACC00133BF7 /* JDFSequentialTooltipManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA1748F1DC6A7480074B9AD /* JDFSequentialTooltipManager.m */; };
+		9A6C9F871DC73ACC00133BF7 /* JDFTooltipManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174901DC6A7480074B9AD /* JDFTooltipManager.h */; };
+		9A6C9F881DC73ACC00133BF7 /* JDFTooltipManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174911DC6A7480074B9AD /* JDFTooltipManager.m */; };
+		9A6C9F891DC73ACC00133BF7 /* JDFTooltips.h in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174921DC6A7480074B9AD /* JDFTooltips.h */; };
+		9A6C9F8A1DC73ACC00133BF7 /* JDFTooltipView.h in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174931DC6A7480074B9AD /* JDFTooltipView.h */; };
+		9A6C9F8B1DC73ACC00133BF7 /* JDFTooltipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174941DC6A7480074B9AD /* JDFTooltipView.m */; };
+		9A6C9F8C1DC73ACC00133BF7 /* UILabel+JDFTooltips.h in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174951DC6A7480074B9AD /* UILabel+JDFTooltips.h */; };
+		9A6C9F8D1DC73ACC00133BF7 /* UILabel+JDFTooltips.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174961DC6A7480074B9AD /* UILabel+JDFTooltips.m */; };
+		9A6C9F8E1DC73ACC00133BF7 /* UIView+JDFTooltips.h in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174971DC6A7480074B9AD /* UIView+JDFTooltips.h */; };
+		9A6C9F8F1DC73ACC00133BF7 /* UIView+JDFTooltips.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA174981DC6A7480074B9AD /* UIView+JDFTooltips.m */; };
+		9A6C9F901DC73B9200133BF7 /* JDFTooltips.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AA174921DC6A7480074B9AD /* JDFTooltips.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5E0ED39ED29D6FF0241D9EA /* libPods-JDFTooltips.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D6A4003FE78C08FD1BA80B /* libPods-JDFTooltips.a */; };
 		DDBB3F3755BF492FCAD607D0 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3837B07CF51F79EED1E56075 /* libPods-Tests.a */; };
 /* End PBXBuildFile section */
@@ -48,12 +48,12 @@
 			remoteGlobalIDString = 6003F589195388D20070C39A;
 			remoteInfo = JDFTooltips;
 		};
-		9AA174861DC6A7140074B9AD /* PBXContainerItemProxy */ = {
+		9A6C9F7E1DC73AA100133BF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6003F582195388D10070C39A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9AA174801DC6A7140074B9AD;
-			remoteInfo = JDFTooltipsFramework;
+			remoteGlobalIDString = 9A6C9F781DC73AA100133BF7;
+			remoteInfo = JDFTooltips2;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -64,7 +64,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9AA174891DC6A7140074B9AD /* JDFTooltips.framework in Embed Frameworks */,
+				9A6C9F811DC73AA100133BF7 /* JDFTooltips.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,7 +99,9 @@
 		7C980B82F8EA08C971598E62 /* Pods-JDFTooltips.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDFTooltips.release.xcconfig"; path = "Pods/Target Support Files/Pods-JDFTooltips/Pods-JDFTooltips.release.xcconfig"; sourceTree = "<group>"; };
 		7F4C079CD1B570885AA7869A /* JDFTooltips.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JDFTooltips.podspec; path = ../JDFTooltips.podspec; sourceTree = "<group>"; };
 		882B6CE880E913574EC73150 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9AA174811DC6A7140074B9AD /* JDFTooltips.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JDFTooltips.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A6C9F791DC73AA100133BF7 /* JDFTooltips.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JDFTooltips.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A6C9F7B1DC73AA100133BF7 /* JDFTooltips.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFTooltips.h; sourceTree = "<group>"; };
+		9A6C9F7C1DC73AA100133BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AA174831DC6A7140074B9AD /* JDFTooltipsFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFTooltipsFramework.h; sourceTree = "<group>"; };
 		9AA174851DC6A7140074B9AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AA1748E1DC6A7480074B9AD /* JDFSequentialTooltipManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JDFSequentialTooltipManager.h; path = ../Pod/Classes/JDFSequentialTooltipManager.h; sourceTree = "<group>"; };
@@ -124,9 +126,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
-				9AA174881DC6A7140074B9AD /* JDFTooltips.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				9A6C9F801DC73AA100133BF7 /* JDFTooltips.framework in Frameworks */,
 				A5E0ED39ED29D6FF0241D9EA /* libPods-JDFTooltips.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,7 +144,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9AA1747D1DC6A7140074B9AD /* Frameworks */ = {
+		9A6C9F751DC73AA100133BF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -160,6 +162,7 @@
 				6003F593195388D20070C39A /* Example */,
 				6003F5B5195388D20070C39A /* Tests */,
 				9AA174821DC6A7140074B9AD /* JDFTooltipsFramework */,
+				9A6C9F7A1DC73AA100133BF7 /* JDFTooltips */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				C49D21B52F5D959D22A39B69 /* Pods */,
@@ -171,7 +174,7 @@
 			children = (
 				6003F58A195388D20070C39A /* JDFTooltips-Demo.app */,
 				6003F5AE195388D20070C39A /* Tests.xctest */,
-				9AA174811DC6A7140074B9AD /* JDFTooltips.framework */,
+				9A6C9F791DC73AA100133BF7 /* JDFTooltips.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -245,6 +248,16 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		9A6C9F7A1DC73AA100133BF7 /* JDFTooltips */ = {
+			isa = PBXGroup;
+			children = (
+				9A6C9F7B1DC73AA100133BF7 /* JDFTooltips.h */,
+				9A6C9F7C1DC73AA100133BF7 /* Info.plist */,
+			);
+			name = JDFTooltips;
+			path = JDFTooltips2;
+			sourceTree = "<group>";
+		};
 		9AA174821DC6A7140074B9AD /* JDFTooltipsFramework */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,11 +270,11 @@
 		9AA174A41DC6A8090074B9AD /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9AA174921DC6A7480074B9AD /* JDFTooltips.h */,
 				9AA1748E1DC6A7480074B9AD /* JDFSequentialTooltipManager.h */,
 				9AA1748F1DC6A7480074B9AD /* JDFSequentialTooltipManager.m */,
 				9AA174901DC6A7480074B9AD /* JDFTooltipManager.h */,
 				9AA174911DC6A7480074B9AD /* JDFTooltipManager.m */,
-				9AA174921DC6A7480074B9AD /* JDFTooltips.h */,
 				9AA174931DC6A7480074B9AD /* JDFTooltipView.h */,
 				9AA174941DC6A7480074B9AD /* JDFTooltipView.m */,
 				9AA174951DC6A7480074B9AD /* UILabel+JDFTooltips.h */,
@@ -286,11 +299,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9AA1747E1DC6A7140074B9AD /* Headers */ = {
+		9A6C9F761DC73AA100133BF7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AA174841DC6A7140074B9AD /* JDFTooltipsFramework.h in Headers */,
+				9A6C9F901DC73B9200133BF7 /* JDFTooltips.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +324,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				9AA174871DC6A7140074B9AD /* PBXTargetDependency */,
+				9A6C9F7F1DC73AA100133BF7 /* PBXTargetDependency */,
 			);
 			name = "JDFTooltips-Demo";
 			productName = JDFTooltips;
@@ -338,22 +351,22 @@
 			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9AA174801DC6A7140074B9AD /* JDFTooltips */ = {
+		9A6C9F781DC73AA100133BF7 /* JDFTooltips */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9AA1748C1DC6A7140074B9AD /* Build configuration list for PBXNativeTarget "JDFTooltips" */;
+			buildConfigurationList = 9A6C9F841DC73AA100133BF7 /* Build configuration list for PBXNativeTarget "JDFTooltips" */;
 			buildPhases = (
-				9AA1747C1DC6A7140074B9AD /* Sources */,
-				9AA1747D1DC6A7140074B9AD /* Frameworks */,
-				9AA1747E1DC6A7140074B9AD /* Headers */,
-				9AA1747F1DC6A7140074B9AD /* Resources */,
+				9A6C9F741DC73AA100133BF7 /* Sources */,
+				9A6C9F751DC73AA100133BF7 /* Frameworks */,
+				9A6C9F761DC73AA100133BF7 /* Headers */,
+				9A6C9F771DC73AA100133BF7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = JDFTooltips;
-			productName = JDFTooltipsFramework;
-			productReference = 9AA174811DC6A7140074B9AD /* JDFTooltips.framework */;
+			productName = JDFTooltips2;
+			productReference = 9A6C9F791DC73AA100133BF7 /* JDFTooltips.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -369,8 +382,9 @@
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
-					9AA174801DC6A7140074B9AD = {
-						CreatedOnToolsVersion = 7.3.1;
+					9A6C9F781DC73AA100133BF7 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -387,7 +401,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9AA174801DC6A7140074B9AD /* JDFTooltips */,
+				9A6C9F781DC73AA100133BF7 /* JDFTooltips */,
 				6003F589195388D20070C39A /* JDFTooltips-Demo */,
 				6003F5AD195388D20070C39A /* Tests */,
 			);
@@ -414,7 +428,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9AA1747F1DC6A7140074B9AD /* Resources */ = {
+		9A6C9F771DC73AA100133BF7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -505,21 +519,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9AA1747C1DC6A7140074B9AD /* Sources */ = {
+		9A6C9F741DC73AA100133BF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AA174991DC6A7480074B9AD /* JDFSequentialTooltipManager.h in Sources */,
-				9AA1749A1DC6A7480074B9AD /* JDFSequentialTooltipManager.m in Sources */,
-				9AA1749B1DC6A7480074B9AD /* JDFTooltipManager.h in Sources */,
-				9AA1749C1DC6A7480074B9AD /* JDFTooltipManager.m in Sources */,
-				9AA1749D1DC6A7480074B9AD /* JDFTooltips.h in Sources */,
-				9AA1749E1DC6A7480074B9AD /* JDFTooltipView.h in Sources */,
-				9AA1749F1DC6A7480074B9AD /* JDFTooltipView.m in Sources */,
-				9AA174A01DC6A7480074B9AD /* UILabel+JDFTooltips.h in Sources */,
-				9AA174A11DC6A7480074B9AD /* UILabel+JDFTooltips.m in Sources */,
-				9AA174A21DC6A7480074B9AD /* UIView+JDFTooltips.h in Sources */,
-				9AA174A31DC6A7480074B9AD /* UIView+JDFTooltips.m in Sources */,
+				9A6C9F851DC73ACC00133BF7 /* JDFSequentialTooltipManager.h in Sources */,
+				9A6C9F861DC73ACC00133BF7 /* JDFSequentialTooltipManager.m in Sources */,
+				9A6C9F871DC73ACC00133BF7 /* JDFTooltipManager.h in Sources */,
+				9A6C9F881DC73ACC00133BF7 /* JDFTooltipManager.m in Sources */,
+				9A6C9F891DC73ACC00133BF7 /* JDFTooltips.h in Sources */,
+				9A6C9F8A1DC73ACC00133BF7 /* JDFTooltipView.h in Sources */,
+				9A6C9F8B1DC73ACC00133BF7 /* JDFTooltipView.m in Sources */,
+				9A6C9F8C1DC73ACC00133BF7 /* UILabel+JDFTooltips.h in Sources */,
+				9A6C9F8D1DC73ACC00133BF7 /* UILabel+JDFTooltips.m in Sources */,
+				9A6C9F8E1DC73ACC00133BF7 /* UIView+JDFTooltips.h in Sources */,
+				9A6C9F8F1DC73ACC00133BF7 /* UIView+JDFTooltips.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,10 +545,10 @@
 			target = 6003F589195388D20070C39A /* JDFTooltips-Demo */;
 			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
 		};
-		9AA174871DC6A7140074B9AD /* PBXTargetDependency */ = {
+		9A6C9F7F1DC73AA100133BF7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9AA174801DC6A7140074B9AD /* JDFTooltips */;
-			targetProxy = 9AA174861DC6A7140074B9AD /* PBXContainerItemProxy */;
+			target = 9A6C9F781DC73AA100133BF7 /* JDFTooltips */;
+			targetProxy = 9A6C9F7E1DC73AA100133BF7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -723,11 +737,15 @@
 			};
 			name = Release;
 		};
-		9AA1748A1DC6A7140074B9AD /* Debug */ = {
+		9A6C9F821DC73AA100133BF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -736,25 +754,28 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = JDFTooltipsFramework/Info.plist;
+				INFOPLIST_FILE = JDFTooltips2/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.IFTTT.JDFTooltipsFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IFTTT.JDFTooltips2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		9AA1748B1DC6A7140074B9AD /* Release */ = {
+		9A6C9F831DC73AA100133BF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -764,12 +785,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = JDFTooltipsFramework/Info.plist;
+				INFOPLIST_FILE = JDFTooltips2/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.IFTTT.JDFTooltipsFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IFTTT.JDFTooltips2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -807,14 +828,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9AA1748C1DC6A7140074B9AD /* Build configuration list for PBXNativeTarget "JDFTooltips" */ = {
+		9A6C9F841DC73AA100133BF7 /* Build configuration list for PBXNativeTarget "JDFTooltips" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9AA1748A1DC6A7140074B9AD /* Debug */,
-				9AA1748B1DC6A7140074B9AD /* Release */,
+				9A6C9F821DC73AA100133BF7 /* Debug */,
+				9A6C9F831DC73AA100133BF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

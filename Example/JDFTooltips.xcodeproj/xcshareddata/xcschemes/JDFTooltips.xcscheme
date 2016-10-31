@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9AA174801DC6A7140074B9AD"
+               BlueprintIdentifier = "9A6C9F781DC73AA100133BF7"
                BuildableName = "JDFTooltips.framework"
                BlueprintName = "JDFTooltips"
                ReferencedContainer = "container:JDFTooltips.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9AA174801DC6A7140074B9AD"
+            BlueprintIdentifier = "9A6C9F781DC73AA100133BF7"
             BuildableName = "JDFTooltips.framework"
             BlueprintName = "JDFTooltips"
             ReferencedContainer = "container:JDFTooltips.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9AA174801DC6A7140074B9AD"
+            BlueprintIdentifier = "9A6C9F781DC73AA100133BF7"
             BuildableName = "JDFTooltips.framework"
             BlueprintName = "JDFTooltips"
             ReferencedContainer = "container:JDFTooltips.xcodeproj">
