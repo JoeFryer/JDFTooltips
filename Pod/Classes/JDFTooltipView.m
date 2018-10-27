@@ -25,8 +25,8 @@
 @property (nonatomic, weak) UIView *targetView;
 @property (nonatomic, weak) UIBarButtonItem *targetBarButtonItem;
 
-@property (nonatomic, copy) void (^showCompletionBlock)();
-@property (nonatomic, copy) void (^hideCompletionBlock)();
+@property (nonatomic, copy) void (^showCompletionBlock)(void);
+@property (nonatomic, copy) void (^hideCompletionBlock)(void);
 
 @property (nonatomic, strong) UIGestureRecognizer *tapGestureRecogniser;
 
@@ -115,7 +115,7 @@
     return self;
 }
 
-- (instancetype)initWithTargetView:(UIView *)targetView hostView:(UIView *)hostView tooltipText:(NSString *)tooltipText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width showCompletionBlock:(void (^)())showCompletionBlock hideCompletionBlock:(void (^)())hideCompletionBlock
+- (instancetype)initWithTargetView:(UIView *)targetView hostView:(UIView *)hostView tooltipText:(NSString *)tooltipText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width showCompletionBlock:(void (^)(void))showCompletionBlock hideCompletionBlock:(void (^)(void))hideCompletionBlock
 {
     self = [super initWithFrame:CGRectZero];
     if (self) {
