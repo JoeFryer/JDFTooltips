@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6003F589195388D20070C39A"
-               BuildableName = "JDFTooltips.app"
+               BlueprintIdentifier = "9A6C9F951DC73D4600133BF7"
+               BuildableName = "JDFTooltips.framework"
                BlueprintName = "JDFTooltips"
                ReferencedContainer = "container:JDFTooltips.xcodeproj">
             </BuildableReference>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6003F5AD195388D20070C39A"
-               BuildableName = "Tests.xctest"
-               BlueprintName = "Tests"
-               ReferencedContainer = "container:JDFTooltips.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "JDFTooltips.app"
-            BlueprintName = "JDFTooltips"
-            ReferencedContainer = "container:JDFTooltips.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -61,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "JDFTooltips.app"
+            BlueprintIdentifier = "9A6C9F951DC73D4600133BF7"
+            BuildableName = "JDFTooltips.framework"
             BlueprintName = "JDFTooltips"
             ReferencedContainer = "container:JDFTooltips.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -80,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "JDFTooltips.app"
+            BlueprintIdentifier = "9A6C9F951DC73D4600133BF7"
+            BuildableName = "JDFTooltips.framework"
             BlueprintName = "JDFTooltips"
             ReferencedContainer = "container:JDFTooltips.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
