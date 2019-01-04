@@ -37,7 +37,7 @@ typedef NS_ENUM(NSInteger, JDFTooltipViewArrowDirection){
 /**
  *  Completion block for JDFTooltipView animation completions. No paramaters, no return value.
  */
-typedef void (^JDFTooltipViewCompletionBlock)();
+typedef void (^JDFTooltipViewCompletionBlock)(void);
 
 
 
