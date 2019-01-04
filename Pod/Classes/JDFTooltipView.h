@@ -64,6 +64,21 @@ typedef void (^JDFTooltipViewCompletionBlock)(void);
 @property (nonatomic, strong) UIColor *textColour;
 
 /**
+ *  The alignment of the tooltip text. Default is NSTextAlignmentCenter.
+ */
+@property (nonatomic) NSTextAlignment textAlignment;
+
+/**
+ *  The line break mode of the tooltip text. Default is NSLineBreakByTruncatingTail.
+ */
+@property (nonatomic) NSLineBreakMode lineBreakMode;
+
+/**
+ *  The number of lines of the tooltip text. Default is 0 (no limit).
+ */
+@property (nonatomic) NSInteger numberOfLines;
+
+/**
  *  The font for the text shown in the tooltip.
  */
 @property (nonatomic, strong) UIFont *font;

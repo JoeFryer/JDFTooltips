@@ -188,6 +188,27 @@
     }
 }
 
+- (void)setTextAlignmentForAllTooltips:(NSTextAlignment)alignment
+{
+    for (JDFTooltipView *tooltip in self.tooltips) {
+        tooltip.textAlignment = alignment;
+    }
+}
+
+- (void)setLineBreakModeForAllTooltips:(NSLineBreakMode)lineBreakMode
+{
+    for (JDFTooltipView *tooltip in self.tooltips) {
+        tooltip.lineBreakMode = lineBreakMode;
+    }
+}
+
+- (void)setNumberOfLinesForAllTooltips:(NSInteger)numberOfLines
+{
+    for (JDFTooltipView *tooltip in self.tooltips) {
+        tooltip.numberOfLines = numberOfLines;
+    }
+}
+
 - (void)setFontForAllTooltips:(UIFont *)font
 {
     for (JDFTooltipView *tooltip in self.tooltips) {

@@ -55,6 +55,24 @@
     self.tooltipTextLabel.textColor = textColour;
 }
 
+- (void)setTextAlignment:(NSTextAlignment)textAlignment
+{
+    _textAlignment = textAlignment;
+    self.tooltipTextLabel.textAlignment = textAlignment;
+}
+
+- (void)setLineBreakMode:(NSLineBreakMode)lineBreakMode
+{
+    _lineBreakMode = lineBreakMode;
+    self.tooltipTextLabel.lineBreakMode = lineBreakMode;
+}
+
+- (void)setNumberOfLines:(NSInteger)numberOfLines
+{
+    _numberOfLines = numberOfLines;
+    self.tooltipTextLabel.numberOfLines = numberOfLines;
+}
+
 - (void)setShadowEnabled:(BOOL)shadowEnabled
 {
     _shadowEnabled = shadowEnabled;
@@ -155,16 +173,16 @@
     
     self.backgroundColor = [UIColor clearColor];
     self.tooltipBackgroundColour = [UIColor darkGrayColor];
-    self.textColour = [UIColor whiteColor];
     
     self.tooltipTextLabel = [[UILabel alloc] initWithFrame:self.bounds];
     self.tooltipTextLabel.text = self.tooltipText;
-    self.tooltipTextLabel.textAlignment = NSTextAlignmentCenter;
-    self.tooltipTextLabel.numberOfLines = 0;
-    self.tooltipTextLabel.lineBreakMode = NSLineBreakByWordWrapping;
-    self.tooltipTextLabel.textColor = self.textColour;
-    self.font = [UIFont systemFontOfSize:14.0f];
     self.tooltipTextLabel.backgroundColor = [UIColor clearColor];
+
+    self.textColour = [UIColor whiteColor];
+    self.textAlignment = NSTextAlignmentCenter;
+    self.lineBreakMode = NSLineBreakByWordWrapping;
+    self.numberOfLines = 0;
+    self.font = [UIFont systemFontOfSize:14.0f];
     [self addSubview:self.tooltipTextLabel];
     
     self.layer.cornerRadius = 5.0f;

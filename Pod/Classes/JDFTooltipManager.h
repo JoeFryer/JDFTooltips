@@ -81,6 +81,27 @@
 - (void)setTextColourForAllTooltips:(UIColor *)colour;
 
 /**
+ *  Sets the text alignment for all of the tooltips that are being managed by the tooltip manager. This method ONLY effects tooltips that have already been added to the manager; any tooltips added after calling this method will not be affected.
+ *
+ *  @param alignment The alignment to be set.
+ */
+- (void)setTextAlignmentForAllTooltips:(NSTextAlignment)alignment;
+
+/**
+ *  Sets the line break mode for all of the tooltips that are being managed by the tooltip manager. This method ONLY effects tooltips that have already been added to the manager; any tooltips added after calling this method will not be affected.
+ *
+ *  @param lineBreakMode The line break mode to be set.
+ */
+- (void)setLineBreakModeForAllTooltips:(NSLineBreakMode)lineBreakMode;
+
+/**
+ *  Sets the number of lines for all of the tooltips that are being managed by the tooltip manager. This method ONLY effects tooltips that have already been added to the manager; any tooltips added after calling this method will not be affected.
+ *
+ *  @param lineBreakMode The line break mode to be set.
+ */
+- (void)setNumberOfLinesForAllTooltips:(NSInteger)numberOfLines;
+
+/**
  *  Sets the font for all of the tooltips that are being managed by the tooltip manager. This method ONLY effects tooltips that have already been added to the manager; any tooltips added after calling this method will not be affected.
  *
  *  @param font The font to be set.
