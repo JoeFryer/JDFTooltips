@@ -97,7 +97,7 @@
 /**
  *  Sets the number of lines for all of the tooltips that are being managed by the tooltip manager. This method ONLY effects tooltips that have already been added to the manager; any tooltips added after calling this method will not be affected.
  *
- *  @param lineBreakMode The line break mode to be set.
+ *  @param numberOfLines The line break mode to be set.
  */
 - (void)setNumberOfLinesForAllTooltips:(NSInteger)numberOfLines;
 
