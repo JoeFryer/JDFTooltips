@@ -25,8 +25,8 @@
 @property (nonatomic, weak) UIView *targetView;
 @property (nonatomic, weak) UIBarButtonItem *targetBarButtonItem;
 
-@property (nonatomic, copy) void (^showCompletionBlock)(void);
-@property (nonatomic, copy) void (^hideCompletionBlock)(void);
+@property (nonatomic, copy) void (^showCompletionBlock)();
+@property (nonatomic, copy) void (^hideCompletionBlock)();
 
 @property (nonatomic, strong) UIGestureRecognizer *tapGestureRecogniser;
 
@@ -43,6 +43,12 @@
     self.tooltipTextLabel.text = tooltipText;
 }
 
+- (void)setTooltipAttributedText:(NSAttributedString *)tooltipAttributedText {
+    _tooltipAttributedText = tooltipAttributedText;
+    self.tooltipTextLabel.attributedText = tooltipAttributedText;
+}
+
+
 - (void)setFont:(UIFont *)font
 {
     _font = font;
@@ -53,24 +59,6 @@
 {
     _textColour = textColour;
     self.tooltipTextLabel.textColor = textColour;
-}
-
-- (void)setTextAlignment:(NSTextAlignment)textAlignment
-{
-    _textAlignment = textAlignment;
-    self.tooltipTextLabel.textAlignment = textAlignment;
-}
-
-- (void)setLineBreakMode:(NSLineBreakMode)lineBreakMode
-{
-    _lineBreakMode = lineBreakMode;
-    self.tooltipTextLabel.lineBreakMode = lineBreakMode;
-}
-
-- (void)setNumberOfLines:(NSInteger)numberOfLines
-{
-    _numberOfLines = numberOfLines;
-    self.tooltipTextLabel.numberOfLines = numberOfLines;
 }
 
 - (void)setShadowEnabled:(BOOL)shadowEnabled
@@ -133,11 +121,53 @@
     return self;
 }
 
-- (instancetype)initWithTargetView:(UIView *)targetView hostView:(UIView *)hostView tooltipText:(NSString *)tooltipText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width showCompletionBlock:(void (^)(void))showCompletionBlock hideCompletionBlock:(void (^)(void))hideCompletionBlock
+// ATTRIBUTED versions
+
+- (instancetype)initWithTargetPoint:(CGPoint)targetPoint hostView:(UIView *)hostView tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width
+{
+    self = [self initWithTargetPoint:targetPoint hostView:hostView tooltipAttributedText:tooltipAttributedText arrowDirection:arrowDirection width:width showCompletionBlock:nil hideCompletionBlock:nil];
+    return self;
+}
+
+- (instancetype)initWithTargetPoint:(CGPoint)targetPoint hostView:(UIView *)hostView tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width showCompletionBlock:(JDFTooltipViewCompletionBlock)showCompletionBlock hideCompletionBlock:(JDFTooltipViewCompletionBlock)hideCompletionBlock;
+{
+    self = [self initWithTargetView:nil hostView:hostView tooltipAttributedText:tooltipAttributedText arrowDirection:arrowDirection width:width showCompletionBlock:showCompletionBlock hideCompletionBlock:hideCompletionBlock];
+    if (self) {
+        self.arrowPoint = targetPoint;
+    }
+    return self;
+}
+
+- (instancetype)initWithTargetView:(UIView *)targetView hostView:(UIView *)hostView tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width
+{
+    self = [self initWithTargetView:targetView hostView:hostView tooltipAttributedText:tooltipAttributedText arrowDirection:arrowDirection width:width showCompletionBlock:nil hideCompletionBlock:nil];
+    return self;
+}
+
+- (instancetype)initWithTargetView:(UIView *)targetView hostView:(UIView *)hostView tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width showCompletionBlock:(void (^)())showCompletionBlock hideCompletionBlock:(void (^)())hideCompletionBlock
 {
     self = [super initWithFrame:CGRectZero];
     if (self) {
-        [self commonInit];
+        [self commonInitWithAttributed:tooltipAttributedText];
+        self.targetView = targetView;
+        self.tooltipSuperview = hostView;
+        self.tooltipAttributedText = tooltipAttributedText;
+        self.arrowDirection = arrowDirection;
+        self.width = width;
+        self.arrowPoint = [self pointForTargetView:targetView arrowDirection:arrowDirection];
+        self.showCompletionBlock = showCompletionBlock;
+        self.hideCompletionBlock = hideCompletionBlock;
+    }
+    return self;
+}
+
+// ATTRIBUTED versions :END
+
+- (instancetype)initWithTargetView:(UIView *)targetView hostView:(UIView *)hostView tooltipText:(NSString *)tooltipText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width showCompletionBlock:(void (^)())showCompletionBlock hideCompletionBlock:(void (^)())hideCompletionBlock
+{
+    self = [super initWithFrame:CGRectZero];
+    if (self) {
+        [self commonInitWithAttributed:nil];
         self.targetView = targetView;
         self.tooltipSuperview = hostView;
         self.tooltipText = tooltipText;
@@ -165,7 +195,7 @@
     return self;
 }
 
-- (void)commonInit
+- (void)commonInitWithAttributed:(NSAttributedString *)attributedText
 {
     // Options
     self.dismissOnTouch = YES;
@@ -173,16 +203,22 @@
     
     self.backgroundColor = [UIColor clearColor];
     self.tooltipBackgroundColour = [UIColor darkGrayColor];
+    self.textColour = [UIColor whiteColor];
     
     self.tooltipTextLabel = [[UILabel alloc] initWithFrame:self.bounds];
-    self.tooltipTextLabel.text = self.tooltipText;
-    self.tooltipTextLabel.backgroundColor = [UIColor clearColor];
-
-    self.textColour = [UIColor whiteColor];
-    self.textAlignment = NSTextAlignmentCenter;
-    self.lineBreakMode = NSLineBreakByWordWrapping;
-    self.numberOfLines = 0;
+    if (attributedText) {
+        
+        self.tooltipTextLabel.attributedText = self.tooltipAttributedText;
+    } else {
+        
+        self.tooltipTextLabel.text = self.tooltipText;
+    }
+    self.tooltipTextLabel.textAlignment = NSTextAlignmentCenter;
+    self.tooltipTextLabel.numberOfLines = 0;
+    self.tooltipTextLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    self.tooltipTextLabel.textColor = self.textColour;
     self.font = [UIFont systemFontOfSize:14.0f];
+    self.tooltipTextLabel.backgroundColor = [UIColor clearColor];
     [self addSubview:self.tooltipTextLabel];
     
     self.layer.cornerRadius = 5.0f;
@@ -336,7 +372,7 @@
     tooltipFrame.size.width = width;
     tooltipFrame.origin.x = tooltipFrame.origin.x - [self overflowAdjustmentForFrame:tooltipFrame withHostViewSize:hostViewSize];
     tooltipFrame.size.height = self.tooltipTextLabel.frame.size.height + [self labelPadding] + [self arrowHeight];
-
+    
     if (arrowDirection == JDFTooltipViewArrowDirectionUp) {
         
     } else if (arrowDirection == JDFTooltipViewArrowDirectionRight) {
@@ -447,6 +483,7 @@
     
     //// Variable Declarations
     CGPoint point = [self convertPoint:self.arrowPoint fromView:self.superview];
+    CGPoint point1 = self.arrowPoint;
     CGFloat angle = [self arrowAngle];
     CGFloat arrowHeight = [self arrowHeight];
     
@@ -479,3 +516,4 @@
 
 
 @end
+

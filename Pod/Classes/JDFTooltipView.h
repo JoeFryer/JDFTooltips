@@ -37,13 +37,13 @@ typedef NS_ENUM(NSInteger, JDFTooltipViewArrowDirection){
 /**
  *  Completion block for JDFTooltipView animation completions. No paramaters, no return value.
  */
-typedef void (^JDFTooltipViewCompletionBlock)(void);
+typedef void (^JDFTooltipViewCompletionBlock)();
 
 
 
 // *****
 // ****************************************************
-            #pragma mark - JDFTooltipView
+#pragma mark - JDFTooltipView
 // ****************************************************
 // *****
 /**
@@ -59,24 +59,14 @@ typedef void (^JDFTooltipViewCompletionBlock)(void);
 @property (nonatomic, copy) NSString *tooltipText;
 
 /**
+ *  The text that is displayed in the tooltip ATTRIBUTED.
+ */
+@property (nonatomic, copy) NSAttributedString *tooltipAttributedText;
+
+/**
  *  The colour of the tooltip text. Default is @c white.
  */
 @property (nonatomic, strong) UIColor *textColour;
-
-/**
- *  The alignment of the tooltip text. Default is NSTextAlignmentCenter.
- */
-@property (nonatomic) NSTextAlignment textAlignment;
-
-/**
- *  The line break mode of the tooltip text. Default is NSLineBreakByTruncatingTail.
- */
-@property (nonatomic) NSLineBreakMode lineBreakMode;
-
-/**
- *  The number of lines of the tooltip text. Default is 0 (no limit).
- */
-@property (nonatomic) NSInteger numberOfLines;
 
 /**
  *  The font for the text shown in the tooltip.
@@ -126,6 +116,8 @@ typedef void (^JDFTooltipViewCompletionBlock)(void);
  */
 - (instancetype)initWithTargetPoint:(CGPoint)targetPoint hostView:(UIView *)hostView tooltipText:(NSString *)tooltipText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width;
 
+- (instancetype)initWithTargetPoint:(CGPoint)targetPoint hostView:(UIView *)hostView tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width;
+
 /**
  *  Initialises A JDFTooltipView with the arrow at the specified point. If you want to support interface orientation, you will need to do so manually for a tooltip created with this initialiser. If you want rotation to be handled automatically, you should use one of the initWithTargetView: or initWithTargetBarButtonItem: methods instead.
  *
@@ -141,6 +133,8 @@ typedef void (^JDFTooltipViewCompletionBlock)(void);
  */
 - (instancetype)initWithTargetPoint:(CGPoint)targetPoint hostView:(UIView *)hostView tooltipText:(NSString *)tooltipText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width showCompletionBlock:(JDFTooltipViewCompletionBlock)showCompletionBlock hideCompletionBlock:(JDFTooltipViewCompletionBlock)hideCompletionBlock;
 
+- (instancetype)initWithTargetPoint:(CGPoint)targetPoint hostView:(UIView *)hostView tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width showCompletionBlock:(JDFTooltipViewCompletionBlock)showCompletionBlock hideCompletionBlock:(JDFTooltipViewCompletionBlock)hideCompletionBlock;
+
 /**
  *  Initialises a JDFTooltipView. The tooltip will try to position the arrow pointing towards the targetView, in the specified direction.
  *
@@ -153,6 +147,8 @@ typedef void (^JDFTooltipViewCompletionBlock)(void);
  *  @return An initialised JDFTooltipView.
  */
 - (instancetype)initWithTargetView:(UIView *)targetView hostView:(UIView *)hostView tooltipText:(NSString *)tooltipText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width;
+
+- (instancetype)initWithTargetView:(UIView *)targetView hostView:(UIView *)hostView tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width;
 
 /**
  *  Initialises a JDFTooltipView. The tooltip will try to position the arrow pointing towards the targetView, in the specified direction.
@@ -169,6 +165,8 @@ typedef void (^JDFTooltipViewCompletionBlock)(void);
  */
 - (instancetype)initWithTargetView:(UIView *)targetView hostView:(UIView *)hostView tooltipText:(NSString *)tooltipText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width showCompletionBlock:(JDFTooltipViewCompletionBlock)showCompletionBlock hideCompletionBlock:(JDFTooltipViewCompletionBlock)hideCompletionBlock;
 
+- (instancetype)initWithTargetView:(UIView *)targetView hostView:(UIView *)hostView tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width showCompletionBlock:(JDFTooltipViewCompletionBlock)showCompletionBlock hideCompletionBlock:(JDFTooltipViewCompletionBlock)hideCompletionBlock;
+
 /**
  *  Initialises a JDFTooltipView. The tooltip will try to position the arrow pointing towards the barButtonItem, in the specified direction.
  *
@@ -181,6 +179,8 @@ typedef void (^JDFTooltipViewCompletionBlock)(void);
  *  @return An initialised JDFTooltipView.
  */
 - (instancetype)initWithTargetBarButtonItem:(UIBarButtonItem *)barButtonItem hostView:(UIView *)hostView tooltipText:(NSString *)tooltipText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width;
+
+- (instancetype)initWithTargetBarButtonItem:(UIBarButtonItem *)barButtonItem hostView:(UIView *)hostView tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width;
 
 /**
  *  Initialises a JDFTooltipView. The tooltip will try to position the arrow pointing towards the barButtonItem, in the specified direction.
@@ -196,6 +196,8 @@ typedef void (^JDFTooltipViewCompletionBlock)(void);
  *  @return An initialised JDFTooltipView.
  */
 - (instancetype)initWithTargetBarButtonItem:(UIBarButtonItem *)barButtonItem hostView:(UIView *)hostView tooltipText:(NSString *)tooltipText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width showCompletionBlock:(JDFTooltipViewCompletionBlock)showCompletionBlock hideCompletionBlock:(JDFTooltipViewCompletionBlock)hideCompletionBlock;
+
+- (instancetype)initWithTargetBarButtonItem:(UIBarButtonItem *)barButtonItem hostView:(UIView *)hostView tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width showCompletionBlock:(JDFTooltipViewCompletionBlock)showCompletionBlock hideCompletionBlock:(JDFTooltipViewCompletionBlock)hideCompletionBlock;
 
 #pragma mark Showing/Hiding Tooltips
 /**
@@ -235,3 +237,4 @@ typedef void (^JDFTooltipViewCompletionBlock)(void);
 - (void)setTooltipNeedsLayoutWithHostViewSize:(CGSize)hostViewSize;
 
 @end
+

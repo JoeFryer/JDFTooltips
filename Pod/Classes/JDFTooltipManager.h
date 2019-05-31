@@ -15,9 +15,9 @@
 /**
  *  JDFTooltipManager manages a set of JDFTooltipViews. It assists in showing the tooltips, and provides the option to show a backdrop behind the tooltips while they are showing.
  
-    Add tooltips to the manager either by creating them yourself then using addTooltip:/addTooltips:, or by using one of the convenience methods provided.
+ Add tooltips to the manager either by creating them yourself then using addTooltip:/addTooltips:, or by using one of the convenience methods provided.
  
-    Calling showAllTooltips: will show all of the tooltips at once. If you wish to show them sequentially instead, you should use JDFTSequentialTooltipManager instead. Use hideAllTooltipsAnimated: to hide all tooltips.
+ Calling showAllTooltips: will show all of the tooltips at once. If you wish to show them sequentially instead, you should use JDFTSequentialTooltipManager instead. Use hideAllTooltipsAnimated: to hide all tooltips.
  */
 @interface JDFTooltipManager : NSObject
 
@@ -79,27 +79,6 @@
  *  @param colour The colour to be set.
  */
 - (void)setTextColourForAllTooltips:(UIColor *)colour;
-
-/**
- *  Sets the text alignment for all of the tooltips that are being managed by the tooltip manager. This method ONLY effects tooltips that have already been added to the manager; any tooltips added after calling this method will not be affected.
- *
- *  @param alignment The alignment to be set.
- */
-- (void)setTextAlignmentForAllTooltips:(NSTextAlignment)alignment;
-
-/**
- *  Sets the line break mode for all of the tooltips that are being managed by the tooltip manager. This method ONLY effects tooltips that have already been added to the manager; any tooltips added after calling this method will not be affected.
- *
- *  @param lineBreakMode The line break mode to be set.
- */
-- (void)setLineBreakModeForAllTooltips:(NSLineBreakMode)lineBreakMode;
-
-/**
- *  Sets the number of lines for all of the tooltips that are being managed by the tooltip manager. This method ONLY effects tooltips that have already been added to the manager; any tooltips added after calling this method will not be affected.
- *
- *  @param numberOfLines The line break mode to be set.
- */
-- (void)setNumberOfLinesForAllTooltips:(NSInteger)numberOfLines;
 
 /**
  *  Sets the font for all of the tooltips that are being managed by the tooltip manager. This method ONLY effects tooltips that have already been added to the manager; any tooltips added after calling this method will not be affected.
@@ -179,6 +158,8 @@
  */
 - (void)addTooltipWithTargetPoint:(CGPoint)targetPoint tooltipText:(NSString *)tooltipText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection hostView:(UIView *)hostView width:(CGFloat)width;
 
+- (void)addTooltipWithTargetPoint:(CGPoint)targetPoint tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection hostView:(UIView *)hostView width:(CGFloat)width;
+
 /**
  *  Initialises a JDFTooltipView with @c initWithTargetPoint:hostView:tooltipText:arrowDirection:width:showCompletionBlock:hideCompletionBlock: and adds it to the manager.
  *
@@ -192,6 +173,8 @@
  */
 - (void)addTooltipWithTargetPoint:(CGPoint)targetPoint tooltipText:(NSString *)tooltipText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection hostView:(UIView *)hostView width:(CGFloat)width showCompletionBlock:(JDFTooltipViewCompletionBlock)showCompletionBlock hideCompletionBlock:(JDFTooltipViewCompletionBlock)hideCompletionBlock;
 
+- (void)addTooltipWithTargetPoint:(CGPoint)targetPoint tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection hostView:(UIView *)hostView width:(CGFloat)width showCompletionBlock:(JDFTooltipViewCompletionBlock)showCompletionBlock hideCompletionBlock:(JDFTooltipViewCompletionBlock)hideCompletionBlock;
+
 /**
  *  Initialises a JDFTooltipView with @c initWithTargetView:hostView:tooltipText:arrowDirection:width: and adds it to the manager.
  *
@@ -202,6 +185,9 @@
  *  @param width          The width of the tooltip. If the text goes beyond this width, the tooltip will be resized vertically to accomodate it.
  */
 - (void)addTooltipWithTargetView:(UIView *)targetView hostView:(UIView *)hostView tooltipText:(NSString *)tooltipText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width;
+
+- (void)addTooltipWithTargetView:(UIView *)targetView hostView:(UIView *)hostView tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width;
+
 
 /**
  *  Initialises a JDFTooltipView with @c initWithTargetView:hostView:tooltipText:arrowDirection:width:showCompletionBlock:hideCompletionBlock: and adds it to the manager.
@@ -216,6 +202,9 @@
  */
 - (void)addTooltipWithTargetView:(UIView *)targetView hostView:(UIView *)hostView tooltipText:(NSString *)tooltipText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width showCompletionBlock:(JDFTooltipViewCompletionBlock)showCompletionBlock hideCompletionBlock:(JDFTooltipViewCompletionBlock)hideCompletionBlock;
 
+- (void)addTooltipWithTargetView:(UIView *)targetView hostView:(UIView *)hostView tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width showCompletionBlock:(JDFTooltipViewCompletionBlock)showCompletionBlock hideCompletionBlock:(JDFTooltipViewCompletionBlock)hideCompletionBlock;
+
+
 /**
  *  Initialises a JDFTooltipView with @c initWithTargetBarButtonItem:hostView:tooltipText:arrowDirection:width: and adds it to the manager.
  *
@@ -226,6 +215,9 @@
  *  @param width                The width of the tooltip. If the text goes beyond this width, the tooltip will be resized vertically to accomodate it.
  */
 - (void)addTooltipWithTargetBarButtonItem:(UIBarButtonItem *)barButtonItem hostView:(UIView *)hostView tooltipText:(NSString *)tooltipText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width;
+
+- (void)addTooltipWithTargetBarButtonItem:(UIBarButtonItem *)barButtonItem hostView:(UIView *)hostView tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width;
+
 
 /**
  *  Initialises a JDFTooltipView with @c initWithTargetBarButtonItem:hostView:tooltipText:arrowDirection:width:showCompletionBlock:hideCompletionBlock and adds it to the manager.
@@ -239,6 +231,8 @@
  *  @param hideCompletionBlock  Completion block that is executed after the tooltip is hidden.
  */
 - (void)addTooltipWithTargetBarButtonItem:(UIBarButtonItem *)barButtonItem hostView:(UIView *)hostView tooltipText:(NSString *)tooltipText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width showCompletionBlock:(JDFTooltipViewCompletionBlock)showCompletionBlock hideCompletionBlock:(JDFTooltipViewCompletionBlock)hideCompletionBlock;
+
+- (void)addTooltipWithTargetBarButtonItem:(UIBarButtonItem *)barButtonItem hostView:(UIView *)hostView tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width showCompletionBlock:(JDFTooltipViewCompletionBlock)showCompletionBlock hideCompletionBlock:(JDFTooltipViewCompletionBlock)hideCompletionBlock;
 
 
 #pragma mark Showing/Hiding Tooltips
@@ -291,3 +285,4 @@
 - (void)handleBackdropTap:(UIGestureRecognizer *)gestureRecogniser;
 
 @end
+

@@ -122,6 +122,45 @@
     [self addTooltip:tooltip];
 }
 
+// ATTRIBUTES version
+
+- (void)addTooltipWithTargetPoint:(CGPoint)targetPoint tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection hostView:(UIView *)hostView width:(CGFloat)width
+{
+    JDFTooltipView *tooltip = [[JDFTooltipView alloc] initWithTargetPoint:targetPoint hostView:hostView tooltipAttributedText:tooltipAttributedText arrowDirection:arrowDirection width:width];
+    [self addTooltip:tooltip];
+}
+
+- (void)addTooltipWithTargetPoint:(CGPoint)targetPoint tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection hostView:(UIView *)hostView width:(CGFloat)width showCompletionBlock:(JDFTooltipViewCompletionBlock)showCompletionBlock hideCompletionBlock:(JDFTooltipViewCompletionBlock)hideCompletionBlock
+{
+    JDFTooltipView *tooltip = [[JDFTooltipView alloc] initWithTargetPoint:targetPoint hostView:hostView tooltipAttributedText:tooltipAttributedText arrowDirection:arrowDirection width:width showCompletionBlock:showCompletionBlock hideCompletionBlock:hideCompletionBlock];
+    [self addTooltip:tooltip];
+}
+
+- (void)addTooltipWithTargetView:(UIView *)targetView hostView:(UIView *)hostView tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width
+{
+    JDFTooltipView *tooltip = [[JDFTooltipView alloc] initWithTargetView:targetView hostView:hostView tooltipAttributedText:tooltipAttributedText arrowDirection:arrowDirection width:width];
+    [self addTooltip:tooltip];
+}
+
+- (void)addTooltipWithTargetView:(UIView *)targetView hostView:(UIView *)hostView tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width showCompletionBlock:(JDFTooltipViewCompletionBlock)showCompletionBlock hideCompletionBlock:(JDFTooltipViewCompletionBlock)hideCompletionBlock
+{
+    JDFTooltipView *tooltip = [[JDFTooltipView alloc] initWithTargetView:targetView hostView:hostView tooltipAttributedText:tooltipAttributedText arrowDirection:arrowDirection width:width showCompletionBlock:showCompletionBlock hideCompletionBlock:hideCompletionBlock];
+    [self addTooltip:tooltip];
+}
+
+- (void)addTooltipWithTargetBarButtonItem:(UIBarButtonItem *)barButtonItem hostView:(UIView *)hostView tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width
+{
+    JDFTooltipView *tooltip = [[JDFTooltipView alloc] initWithTargetBarButtonItem:barButtonItem hostView:hostView tooltipAttributedText:tooltipAttributedText arrowDirection:arrowDirection width:width];
+    [self addTooltip:tooltip];
+}
+
+- (void)addTooltipWithTargetBarButtonItem:(UIBarButtonItem *)barButtonItem hostView:(UIView *)hostView tooltipAttributedText:(NSAttributedString *)tooltipAttributedText arrowDirection:(JDFTooltipViewArrowDirection)arrowDirection width:(CGFloat)width showCompletionBlock:(JDFTooltipViewCompletionBlock)showCompletionBlock hideCompletionBlock:(JDFTooltipViewCompletionBlock)hideCompletionBlock
+{
+    JDFTooltipView *tooltip = [[JDFTooltipView alloc] initWithTargetBarButtonItem:barButtonItem hostView:hostView tooltipAttributedText:tooltipAttributedText arrowDirection:arrowDirection width:width showCompletionBlock:showCompletionBlock hideCompletionBlock:hideCompletionBlock];
+    [self addTooltip:tooltip];
+}
+
+// ATTRIBUTES version :END
 
 #pragma mark - Showing Tooltips (Public)
 
@@ -185,27 +224,6 @@
 {
     for (JDFTooltipView *tooltip in self.tooltips) {
         tooltip.textColour = colour;
-    }
-}
-
-- (void)setTextAlignmentForAllTooltips:(NSTextAlignment)alignment
-{
-    for (JDFTooltipView *tooltip in self.tooltips) {
-        tooltip.textAlignment = alignment;
-    }
-}
-
-- (void)setLineBreakModeForAllTooltips:(NSLineBreakMode)lineBreakMode
-{
-    for (JDFTooltipView *tooltip in self.tooltips) {
-        tooltip.lineBreakMode = lineBreakMode;
-    }
-}
-
-- (void)setNumberOfLinesForAllTooltips:(NSInteger)numberOfLines
-{
-    for (JDFTooltipView *tooltip in self.tooltips) {
-        tooltip.numberOfLines = numberOfLines;
     }
 }
 
@@ -280,3 +298,4 @@
 }
 
 @end
+
